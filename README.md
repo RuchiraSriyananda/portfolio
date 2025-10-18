@@ -45,3 +45,9 @@ Ruchira Sriyananda
 💡 Passionate about web development, cloud solutions, and emerging technologies.
 
 🌱 Continuously learning and improving as a full-stack developer.
+
+Contact Me
+
+Email : ruchirasriyananda@outlook.com
+Github : https://github.com/ruchira-sriyananda
+Linkd in : https://www.linkedin.com/in/ruchira-sriyananda/
