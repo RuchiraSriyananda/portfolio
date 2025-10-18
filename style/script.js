@@ -1,17 +1,10 @@
-
-        // Smooth scrolling for navigation links
+// Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
                 });
-                
-                // Update active nav link
-                document.querySelectorAll('.nav-links a').forEach(link => {
-                    link.classList.remove('active');
-                });
-                this.classList.add('active');
             });
         });
 
@@ -25,26 +18,6 @@
                 header.style.padding = '1.5rem 5%';
                 header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
             }
-            
-            // Update active nav link based on scroll position
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('.nav-links a');
-            
-            let current = '';
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                if (scrollY >= (sectionTop - 200)) {
-                    current = section.getAttribute('id');
-                }
-            });
-            
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href').substring(1) === current) {
-                    link.classList.add('active');
-                }
-            });
         });
 
         // Project cards animation on scroll
@@ -67,16 +40,48 @@
             document.querySelector('.nav-links').classList.toggle('active');
         });
 
-        // Theme toggle functionality
-        const themeToggle = document.getElementById('themeToggle');
-        themeToggle.addEventListener('click', function() {
-            document.body.classList.toggle('dark-theme');
-            const icon = themeToggle.querySelector('i');
-            if (document.body.classList.contains('dark-theme')) {
-                icon.classList.remove('fa-moon');
-                icon.classList.add('fa-sun');
-            } else {
-                icon.classList.remove('fa-sun');
-                icon.classList.add('fa-moon');
+        // Create particles
+        function createParticles(containerId, count) {
+            const container = document.getElementById(containerId);
+            for (let i = 0; i < count; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                
+                // Random properties
+                const size = Math.random() * 60 + 10;
+                const posX = Math.random() * 100;
+                const posY = Math.random() * 100;
+                const animationDuration = Math.random() * 20 + 10;
+                const animationDelay = Math.random() * 5;
+                
+                particle.style.width = `${size}px`;
+                particle.style.height = `${size}px`;
+                particle.style.left = `${posX}%`;
+                particle.style.top = `${posY}%`;
+                particle.style.animationDuration = `${animationDuration}s`;
+                particle.style.animationDelay = `${animationDelay}s`;
+                
+                container.appendChild(particle);
             }
-        });
+        }
+
+        // Initialize particles
+        createParticles('particles', 15);
+        createParticles('contact-particles', 10);
+
+        // Add typing effect to hero text
+        const heroText = document.querySelector('.hero h1 span');
+        const originalText = heroText.textContent;
+        heroText.textContent = '';
+        
+        let i = 0;
+        function typeWriter() {
+            if (i < originalText.length) {
+                heroText.textContent += originalText.charAt(i);
+                i++;
+                setTimeout(typeWriter, 100);
+            }
+        }
+        
+        // Start typing effect after a short delay
+        setTimeout(typeWriter, 1000);

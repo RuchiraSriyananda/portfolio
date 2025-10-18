@@ -3,42 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Morgan | Creative Developer</title>
+    <title>Professional Portfolio | Creative Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="style/style.css">
 </head>
 <body>
-    <!-- Creative Header -->
+    <!-- Header -->
     <header>
-        <a href="#" class="logo"><i class="fas fa-code"></i>Ruchira Sriyananda</a>
+        <a href="#" class="logo"><i class="fas fa-code"></i> DevPortfolio</a>
         <div class="nav-links">
-            <a href="#home" class="active">Home</a>
+            <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </div>
-        <div class="header-actions">
-            <button class="theme-toggle" id="themeToggle">
-                <i class="fas fa-moon"></i>
-            </button>
-            <button class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
+        <div class="particles" id="particles"></div>
         <div class="hero-content">
-            <h1>Hi, I'm <span>Alex Morgan</span><br>Creative Developer</h1>
-            <p>I create beautiful, functional websites and applications with a focus on user experience and modern design principles. With over 5 years of experience, I specialize in front-end development and UI/UX design.</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn">View My Work</a>
-                <a href="#contact" class="btn btn-outline">Get In Touch</a>
-            </div>
+            <h1>Transforming Ideas Into <span>Digital Experiences</span></h1>
+            <p>I'm a passionate front-end developer specializing in creating beautiful, functional, and user-centered digital experiences. With a keen eye for detail and a love for clean code.</p>
+            <a href="#projects" class="btn">Explore My Work <i class="fas fa-arrow-right"></i></a>
         </div>
         <div class="hero-image">
-            <div class="hero-bg-shape"></div>
+            <div class="hero-bg-element"></div>
             <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Profile Image">
         </div>
     </section>
@@ -47,23 +41,21 @@
     <section class="about" id="about">
         <div class="section-title">
             <h2>About Me</h2>
-            <p>Get to know me better</p>
+            <p>Get to know the person behind the code</p>
         </div>
         <div class="about-content">
             <div class="about-text">
-                <h3>I'm a passionate web developer</h3>
-                <p>With over 5 years of experience in web development, I specialize in creating responsive, user-friendly websites and applications. I'm passionate about clean code, modern design, and creating digital experiences that make a difference.</p>
-                <p>My expertise includes front-end development with React and Vue.js, back-end development with Node.js, and creating responsive designs that work seamlessly across all devices.</p>
+                <h3>Crafting Digital Solutions With Precision</h3>
+                <p>I'm a dedicated front-end developer with over 5 years of experience creating responsive, performant, and accessible web applications. My passion lies in transforming complex problems into intuitive, beautiful digital solutions.</p>
+                <p>I believe in the power of clean code, thoughtful design, and continuous learning. When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or sharing knowledge with the developer community.</p>
                 
                 <div class="skills">
-                    <div class="skill">HTML/CSS</div>
-                    <div class="skill">JavaScript</div>
-                    <div class="skill">React</div>
-                    <div class="skill">Vue.js</div>
-                    <div class="skill">Node.js</div>
-                    <div class="skill">UI/UX Design</div>
+                    <div class="skill">HTML5 & CSS3</div>
+                    <div class="skill">JavaScript (ES6+)</div>
+                    <div class="skill">React & Vue.js</div>
                     <div class="skill">Responsive Design</div>
-                    <div class="skill">Git & GitHub</div>
+                    <div class="skill">UI/UX Design</div>
+                    <div class="skill">Performance Optimization</div>
                 </div>
             </div>
             <div class="about-image">
@@ -75,8 +67,8 @@
     <!-- Projects Section -->
     <section class="projects" id="projects">
         <div class="section-title">
-            <h2>My Projects</h2>
-            <p>Some of my recent work</p>
+            <h2>Featured Projects</h2>
+            <p>A selection of my recent work</p>
         </div>
         <div class="projects-grid">
             <div class="project-card">
@@ -85,13 +77,17 @@
                 </div>
                 <div class="project-info">
                     <h3>E-Commerce Platform</h3>
-                    <p>A modern e-commerce solution with seamless checkout and inventory management.</p>
+                    <p>A modern, responsive e-commerce solution with seamless checkout experience, inventory management, and customer analytics.</p>
                     <div class="project-tags">
                         <span class="project-tag">React</span>
                         <span class="project-tag">Node.js</span>
                         <span class="project-tag">MongoDB</span>
+                        <span class="project-tag">Stripe API</span>
                     </div>
-                    <a href="#" class="btn">View Project</a>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="project-link">GitHub <i class="fab fa-github"></i></a>
+                    </div>
                 </div>
             </div>
             
@@ -101,13 +97,17 @@
                 </div>
                 <div class="project-info">
                     <h3>Analytics Dashboard</h3>
-                    <p>Interactive data visualization dashboard with real-time metrics and reporting.</p>
+                    <p>Interactive data visualization dashboard with real-time metrics, customizable reports, and advanced filtering capabilities.</p>
                     <div class="project-tags">
                         <span class="project-tag">Vue.js</span>
                         <span class="project-tag">D3.js</span>
                         <span class="project-tag">Firebase</span>
+                        <span class="project-tag">Chart.js</span>
                     </div>
-                    <a href="#" class="btn">View Project</a>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="project-link">GitHub <i class="fab fa-github"></i></a>
+                    </div>
                 </div>
             </div>
             
@@ -116,14 +116,18 @@
                     <i class="fas fa-mobile-alt"></i>
                 </div>
                 <div class="project-info">
-                    <h3>Travel App</h3>
-                    <p>Mobile application for travelers to discover and book unique experiences.</p>
+                    <h3>Travel Explorer App</h3>
+                    <p>Mobile application for travelers to discover unique experiences, book accommodations, and share their adventures.</p>
                     <div class="project-tags">
                         <span class="project-tag">React Native</span>
                         <span class="project-tag">GraphQL</span>
                         <span class="project-tag">AWS</span>
+                        <span class="project-tag">Mapbox</span>
                     </div>
-                    <a href="#" class="btn">View Project</a>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                        <a href="#" class="project-link">GitHub <i class="fab fa-github"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -131,9 +135,10 @@
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
+        <div class="particles" id="contact-particles"></div>
         <div class="section-title">
-            <h2>Contact Me</h2>
-            <p>Let's work together</p>
+            <h2>Let's Connect</h2>
+            <p>Get in touch to discuss your next project</p>
         </div>
         <div class="contact-content">
             <div class="contact-info">
@@ -141,30 +146,37 @@
                     <div class="contact-icon">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <div class="contact-details">
-                        <h3>Location</h3>
-                        <p>Sri Lanka, north centel province, anuradhapura, 50550</p>
-                    </div>
+                    <h3>Location</h3>
+                    <p>San Francisco, CA</p>
                 </div>
                 
                 <div class="contact-item">
                     <div class="contact-icon">
                         <i class="fas fa-envelope"></i>
                     </div>
-                    <div class="contact-details">
-                        <h3>Email</h3>
-                        <p>ruchirasriyananda@outlook.com</p>
-                    </div>
+                    <h3>Email</h3>
+                    <p>hello@devportfolio.com</p>
                 </div>
                 
                 <div class="contact-item">
                     <div class="contact-icon">
                         <i class="fas fa-phone"></i>
                     </div>
-                    <div class="contact-details">
-                        <h3>Phone</h3>
-                        <p>+94 741144268</p>
-                    </div>
+                    <h3>Phone</h3>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+            </div>
+            
+            <div class="contact-cta">
+                <h3>Ready to start your project?</h3>
+                <p>I'm currently available for freelance work and full-time positions. Let's discuss how we can bring your ideas to life.</p>
+                <a href="mailto:hello@devportfolio.com" class="btn">Get In Touch <i class="fas fa-paper-plane"></i></a>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
                 </div>
             </div>
         </div>
@@ -172,20 +184,9 @@
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-logo">Alex Morgan</div>
-            <p>Creative Developer & UI/UX Designer</p>
-            <div class="social-links">
-                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
-            </div>
-            <p class="copyright">&copy; 2023 Alex Morgan. All Rights Reserved.</p>
-        </div>
+        <div class="copyright">&copy; 2023 DevPortfolio. All Rights Reserved. Crafted with <i class="fas fa-heart" style="color: var(--accent);"></i></div>
     </footer>
 
-    <script href="style/script.js">
-    </script>
+    <script href="style/script.js">    </script>
 </body>
 </html>
