@@ -1,103 +1,198 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ruchira Sriyananda — Full-Stack Developer</title>
-  <meta name="description" content="Personal portfolio of Ruchira Sriyananda — full-stack developer. Projects, skills, education and contact.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-  <header>
-    <h1>Ruchira Sriyananda</h1>
-    <p>HND Software Engineering • Full-Stack Developer</p>
-    <nav>
-      <a href="#about">About</a> |
-      <a href="#projects">Projects</a> |
-      <a href="#skills">Skills</a> |
-      <a href="#education">Education</a> |
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <!-- Header -->
+    <header>
+        <a href="#" class="logo"><i class="fas fa-code"></i> Portfolio</a>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I am a full-stack developer passionate about building web applications and learning new technologies. I enjoy contributing to open-source projects and improving my skills in frontend and backend development.</p>
-      <ul>
-        <li>Location: Sri Lanka</li>
-        <li>Education: HND in Software Engineering, ESOFT Metro Campus</li>
-        <li>Interests: Web development, cloud solutions, automation</li>
-      </ul>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Hi, I'm <span>Alex Morgan</span><br>Creative Developer</h1>
+            <p>I create beautiful, functional websites and applications with a focus on user experience and modern design principles.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Profile Image">
+        </div>
     </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-
-      <article>
-        <h3>Project Title 1</h3>
-        <p>Short description of the project, technologies used, and the problem it solves.</p>
-        <p><strong>Tech:</strong> HTML, CSS, JavaScript, PHP</p>
-        <p><a href="#">Repository / Demo</a></p>
-      </article>
-
-      <article>
-        <h3>Project Title 2</h3>
-        <p>Short description of the project, your role, and notable features.</p>
-        <p><strong>Tech:</strong> Laravel, MySQL, Vue.js</p>
-        <p><a href="#">Repository / Demo</a></p>
-      </article>
-
-      <article>
-        <h3>Project Title 3</h3>
-        <p>Short description and link to the live demo or repository.</p>
-        <p><strong>Tech:</strong> React, Node.js, Express</p>
-        <p><a href="#">Repository / Demo</a></p>
-      </article>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-title">
+            <h2>About Me</h2>
+            <p>Get to know me better</p>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>I'm a passionate web developer</h3>
+                <p>With over 5 years of experience in web development, I specialize in creating responsive, user-friendly websites and applications. I'm passionate about clean code, modern design, and creating digital experiences that make a difference.</p>
+                <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities.</p>
+                
+                <div class="skills">
+                    <div class="skill">HTML/CSS</div>
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">React</div>
+                    <div class="skill">Node.js</div>
+                    <div class="skill">UI/UX Design</div>
+                    <div class="skill">Responsive Design</div>
+                </div>
+                
+                <a href="#contact" class="btn">Get In Touch</a>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="About Image">
+            </div>
+        </div>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>Frontend: HTML, CSS, JavaScript, React, Vue</li>
-        <li>Backend: PHP, Laravel, Node.js, Express</li>
-        <li>Databases: MySQL, MongoDB</li>
-        <li>Tools: Git, Docker, VS Code, Linux</li>
-      </ul>
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="section-title">
+            <h2>My Projects</h2>
+            <p>Some of my recent work</p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-img">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <div class="project-info">
+                    <h3>E-Commerce Platform</h3>
+                    <p>A modern e-commerce solution with seamless checkout and inventory management.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">React</span>
+                        <span class="project-tag">Node.js</span>
+                        <span class="project-tag">MongoDB</span>
+                    </div>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-img">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="project-info">
+                    <h3>Analytics Dashboard</h3>
+                    <p>Interactive data visualization dashboard with real-time metrics and reporting.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Vue.js</span>
+                        <span class="project-tag">D3.js</span>
+                        <span class="project-tag">Firebase</span>
+                    </div>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-img">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="project-info">
+                    <h3>Travel App</h3>
+                    <p>Mobile application for travelers to discover and book unique experiences.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">React Native</span>
+                        <span class="project-tag">GraphQL</span>
+                        <span class="project-tag">AWS</span>
+                    </div>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="education">
-      <h2>Education</h2>
-      <p><strong>HND in Software Engineering</strong> — ESOFT Metro Campus</p>
-      <p>Graduation: August (year)</p>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-title">
+            <h2>Contact Me</h2>
+            <p>Let's work together</p>
+        </div>
+        <div class="contact-content">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h3>Location</h3>
+                        <p>San Francisco, CA</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h3>Email</h3>
+                        <p>hello@example.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" class="form-control" placeholder="Your Message" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>If you'd like to get in touch, reach out via:</p>
-      <ul>
-        <li>Email: your-email@example.com</li>
-        <li>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></li>
-        <li>GitHub: <a href="https://github.com/RuchiraSriyananda">github.com/RuchiraSriyananda</a></li>
-      </ul>
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+        </div>
+        <p class="copyright">&copy; 2023 Alex Morgan. All Rights Reserved.</p>
+    </footer>
 
-      <h3>Contact Form</h3>
-      <form action="#" method="post">
-        <label for="name">Name</label><br>
-        <input type="text" id="name" name="name" required><br>
-
-        <label for="email">Email</label><br>
-        <input type="email" id="email" name="email" required><br>
-
-        <label for="message">Message</label><br>
-        <textarea id="message" name="message" rows="5" required></textarea><br>
-
-        <button type="submit">Send</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; <span id="year">2025</span> Ruchira Sriyananda. All rights reserved.</p>
-  </footer>
+    <script href="style/script.js"></script>
 </body>
 </html>
