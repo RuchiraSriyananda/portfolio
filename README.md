@@ -51,5 +51,5 @@ Contact Me
 Email : ruchirasriyananda@outlook.com
 Github : https://github.com/ruchira-sriyananda
 Linkd in : https://www.linkedin.com/in/ruchira-sriyananda/
-
+x: https://x.com/Ruchibro
 site Link: https://ruchira-sriyananda.github.io/portfolio/ 

@@ -3,33 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio <i class="fas fa-code"></i>mr.ruchira<i class="fas fa-code"></i></title>
+    <title>Alex Morgan | Creative Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Creative Header -->
     <header>
-        <a href="#" class="logo"><i class="fas fa-code"></i> Portfolio</a>
+        <a href="#" class="logo"><i class="fas fa-code"></i> Alex Morgan</a>
         <div class="nav-links">
-            <a href="#home">Home</a>
+            <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </div>
-        <div class="menu-toggle">
-            <i class="fas fa-bars"></i>
+        <div class="header-actions">
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
-            <h1>Hi, I'm <span>Ruchira Sriyananda</span><br>Creative Developer</h1>
-            <p>I create beautiful, functional websites and applications with a focus on user experience and modern design principles.</p>
-            <a href="#projects" class="btn">View My Work</a>
+            <h1>Hi, I'm <span>Alex Morgan</span><br>Creative Developer</h1>
+            <p>I create beautiful, functional websites and applications with a focus on user experience and modern design principles. With over 5 years of experience, I specialize in front-end development and UI/UX design.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
         </div>
         <div class="hero-image">
+            <div class="hero-bg-shape"></div>
             <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Profile Image">
         </div>
     </section>
@@ -43,19 +52,19 @@
         <div class="about-content">
             <div class="about-text">
                 <h3>I'm a passionate web developer</h3>
-                <p>With over 1 years of experience in web development, I specialize in creating responsive, user-friendly websites and applications. I'm passionate about clean code, modern design, and creating digital experiences that make a difference.</p>
-                <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or enjoying outdoor activities.</p>
+                <p>With over 5 years of experience in web development, I specialize in creating responsive, user-friendly websites and applications. I'm passionate about clean code, modern design, and creating digital experiences that make a difference.</p>
+                <p>My expertise includes front-end development with React and Vue.js, back-end development with Node.js, and creating responsive designs that work seamlessly across all devices.</p>
                 
                 <div class="skills">
                     <div class="skill">HTML/CSS</div>
                     <div class="skill">JavaScript</div>
                     <div class="skill">React</div>
+                    <div class="skill">Vue.js</div>
                     <div class="skill">Node.js</div>
                     <div class="skill">UI/UX Design</div>
                     <div class="skill">Responsive Design</div>
+                    <div class="skill">Git & GitHub</div>
                 </div>
-                
-                <a href="#contact" class="btn">Get In Touch</a>
             </div>
             <div class="about-image">
                 <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="About Image">
@@ -132,7 +141,7 @@
                     <div class="contact-icon">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>
-                    <div>
+                    <div class="contact-details">
                         <h3>Location</h3>
                         <p>San Francisco, CA</p>
                     </div>
@@ -142,9 +151,9 @@
                     <div class="contact-icon">
                         <i class="fas fa-envelope"></i>
                     </div>
-                    <div>
+                    <div class="contact-details">
                         <h3>Email</h3>
-                        <p>hello@example.com</p>
+                        <p>alex.morgan@example.com</p>
                     </div>
                 </div>
                 
@@ -152,47 +161,41 @@
                     <div class="contact-icon">
                         <i class="fas fa-phone"></i>
                     </div>
-                    <div>
+                    <div class="contact-details">
                         <h3>Phone</h3>
                         <p>+1 (555) 123-4567</p>
                     </div>
                 </div>
-            </div>
-            
-            <div class="contact-form">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-globe"></i>
                     </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+                    <div class="contact-details">
+                        <h3>Website</h3>
+                        <p>www.alexmorgan.dev</p>
                     </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" class="form-control" placeholder="Your Message" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="social-links">
-            <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+        <div class="footer-content">
+            <div class="footer-logo">Alex Morgan</div>
+            <p>Creative Developer & UI/UX Designer</p>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-dribbble"></i></a>
+            </div>
+            <p class="copyright">&copy; 2023 Alex Morgan. All Rights Reserved.</p>
         </div>
-        <p class="copyright">&copy; 2023 Alex Morgan. All Rights Reserved.</p>
     </footer>
 
-    <script href="style/script.js"></script>
+    <script href="style/script.js">
+    </script>
 </body>
 </html>
