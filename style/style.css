@@ -613,7 +613,11 @@
             color: rgba(255, 255, 255, 0.7);
             font-size: 0.9rem;
         }
-
+        /*---Profile image---*/
+        #profimg{
+            width:70%;
+            height: 60%;
+        }
         /* Animations */
         @keyframes fadeInUp {
             from {
